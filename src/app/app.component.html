@@ -1,0 +1,61 @@
+<div class="container-fluid">
+  <div id="wrapper">
+    <!-- Top navigation bar -->
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation" style="height: 80px">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#/home" style="padding:25px"><b style="color: #337ab7; font-size: xx-large">Surgical
+          Site Infection Surveillance</b></a>
+      </div>
+      <ul id="menu-content1" class="nav navbar-top-links navbar-right" style="padding-top: 25px">
+        <li>Full name</li>
+        <li>|</li>
+        <li>Sign out</li>
+      </ul>
+    </nav>
+    <!-- Side navigation bar -->
+    <div class="navbar-default sidebar change" role="navigation">
+      <div class="nav-side-menu change">
+        <div class="menu-list">
+          <ul id="menu-content" class="menu-content collapse out">
+            <li routerLink="patients_details" [ngClass]="{'active':router.url=='/patients_details'}"
+                (click)="setActiveTab('patients_details')">
+              <a>
+                <i class="fa fa-address-card" aria-hidden="true"></i>
+                <span ng-cloak>Patient's Details</span>
+              </a>
+            </li>
+            <li routerLink="details_of_referral" [ngClass]="{'active':router.url=='/details_of_referral'}"
+                (click)="setActiveTab('details_of_referral')">
+              <a>
+                <i class="fa fa-handshake-o" aria-hidden="true"></i>
+                <span ng-cloak>Details of Referral</span>
+              </a>
+            </li>
+            <li routerLink="details_of_procedure" [ngClass]="{'active':router.url=='/details_of_procedure'}"
+                (click)="setActiveTab('details_of_procedure')">
+              <a>
+                <i class="fa fa-users" aria-hidden="true"></i>
+                <span ng-cloak>Details of Procedure</span>
+              </a>
+            </li>
+            <li routerLink="anesthetic_assessment" [ngClass]="{'active':router.url=='/anesthetic_assessment'}"
+                (click)="setActiveTab('anesthetic_assessment')">
+              <a>
+                <i class="fa fa-bed" aria-hidden="true"></i>
+                <span ng-cloak>Anesthetic Assessment</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- Footer -->
+    <div class="navbar-fixed-bottom change  ng-view-panel" id="bottomBar">
+      <div class="text-center">
+        <ul>
+          <li>&#169; chamithashanaka&#64;gmail.com &#38; nishenkpeiris&#64;gmail.com</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
