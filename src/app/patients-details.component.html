@@ -6,11 +6,11 @@
         <div class="col-sm-12">
           <div class="col-sm-12">
             <form (ngSubmit)="onSubmitTeam()">
-              <div id="form-header-team" class="panel panel-info" [hidden]="panelDisable">
+              <div id="form-header-team" class="panel panel-info">
                 <div class="panel-heading">
                   <b>1. Patient's Details</b>
                 </div>
-                <div class="panel-body" uib-collapse="isPanelCollapsed">
+                <div class="panel-body">
                   <div class="col-sm-12">
                     <table class="table panel-table">
                       <tr>
@@ -133,7 +133,7 @@
                     </table>
                   </div>
                   <div class="form-group ">
-                    <div class="col-sm-12 " [hidden]="addTeamDisable">
+                    <div class="col-sm-12">
                       <button class="btn btn-success update-job pull-right col-sm-1"><i
                         class="fa fa-floppy-o" style="padding-right: 8px"></i><b>Save</b>
                       </button>

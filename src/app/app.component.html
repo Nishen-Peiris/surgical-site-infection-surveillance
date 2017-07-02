@@ -20,14 +20,13 @@
     <div class="nav-side-menu change">
       <div class="menu-list">
         <ul id="menu-content" class="menu-content collapse out">
-          <li routerLink="/patients-details" routerLinkActive="active">
+          <li routerLink="/patients-details">
             <a>
               <i class="fa fa-address-card" aria-hidden="true"></i>
               <span ng-cloak>Patient's Details</span>
             </a>
           </li>
-          <li routerLink="details_of_referral" [ngClass]="{'active':router.url=='/details_of_referral'}"
-              (click)="setActiveTab('details_of_referral')">
+          <li routerLink="details-of-referral">
             <a>
               <i class="fa fa-handshake-o" aria-hidden="true"></i>
               <span ng-cloak>Details of Referral</span>
