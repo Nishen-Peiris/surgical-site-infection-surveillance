@@ -1,32 +1,6 @@
 import {Component} from '@angular/core';
 
-const DISTRICTS: string[] = [
-  'Ampara',
-  'Anuradhapura',
-  'Badulla',
-  'Batticalloa',
-  'Colombo',
-  'Galle',
-  'Gampaha',
-  'Hambanthota',
-  'Jafna',
-  'Kaluthara',
-  'Kandy',
-  'Kegalle',
-  'Kilinochchi',
-  'Kurunegala',
-  'Mannar',
-  'Matale',
-  'Matara',
-  'Monaragala',
-  'Mulathivu',
-  'Nuwara Eliya',
-  'Polonnaruwa',
-  'Puttalam',
-  'Rathnapura',
-  'Trincomalee',
-  'Vavuniya'
-];
+import {DISTRICTS} from './districts';
 
 @Component({
   selector: 'patients-details',
