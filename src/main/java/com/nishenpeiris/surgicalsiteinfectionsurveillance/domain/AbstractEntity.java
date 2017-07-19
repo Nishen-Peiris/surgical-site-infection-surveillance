@@ -1,6 +1,4 @@
-package com.nishenpeiris.surgicalsiteinfectionsurveillance;
-
-import com.sun.javafx.beans.IDProperty;
+package com.nishenpeiris.surgicalsiteinfectionsurveillance.domain;
 
 /**
  * Base class to derive entity classes from

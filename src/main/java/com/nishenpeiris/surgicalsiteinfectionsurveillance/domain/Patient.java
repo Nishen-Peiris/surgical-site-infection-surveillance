@@ -1,4 +1,7 @@
-package com.nishenpeiris.surgicalsiteinfectionsurveillance;
+package com.nishenpeiris.surgicalsiteinfectionsurveillance.domain;
+
+import com.nishenpeiris.surgicalsiteinfectionsurveillance.util.District;
+import com.nishenpeiris.surgicalsiteinfectionsurveillance.util.Sex;
 
 import java.time.LocalDate;
 

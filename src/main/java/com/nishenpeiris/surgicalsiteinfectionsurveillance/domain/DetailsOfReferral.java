@@ -1,4 +1,6 @@
-package com.nishenpeiris.surgicalsiteinfectionsurveillance;
+package com.nishenpeiris.surgicalsiteinfectionsurveillance.domain;
+
+import com.nishenpeiris.surgicalsiteinfectionsurveillance.util.Referrer;
 
 import java.time.LocalDate;
 

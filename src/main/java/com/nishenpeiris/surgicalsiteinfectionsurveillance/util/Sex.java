@@ -1,4 +1,4 @@
-package com.nishenpeiris.surgicalsiteinfectionsurveillance;
+package com.nishenpeiris.surgicalsiteinfectionsurveillance.util;
 
 /**
  * Enum to represent the gender of a person

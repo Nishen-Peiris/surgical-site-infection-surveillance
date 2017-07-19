@@ -1,4 +1,4 @@
-package com.nishenpeiris.surgicalsiteinfectionsurveillance;
+package com.nishenpeiris.surgicalsiteinfectionsurveillance.util;
 
 /**
  * Represents an institute of referral
