@@ -1,6 +1,6 @@
 import {Component} from '@angular/core';
 
-import {DISTRICTS} from './districts';
+import {DISTRICTS} from '../../shared/districts';
 
 @Component({
   templateUrl: './patients-details.component.html'

@@ -1,13 +1,13 @@
 import {Component} from '@angular/core';
 
-import {REFERRED_BYS} from './referred-bys';
-import {INSTITUTES_OF_REFERRAL} from './institutes-of-referral';
+import {REFERRED_BYS} from '../../shared/referred-bys';
+import {INSTITUTES_OF_REFERRAL} from '../../shared/institutes-of-referral';
 
 @Component({
-  templateUrl: './details-of-referral.component.html'
+  templateUrl: './all-patients.component.html'
 })
 
-export class DetailsOfReferralComponent {
+export class AllPatientsComponent {
   dateOfFirstReferral: Date;
   referredBy: string;
   instituteOfReferral: string;

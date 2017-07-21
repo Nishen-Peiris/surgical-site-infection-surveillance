@@ -1,12 +1,12 @@
 import {NgModule} from '@angular/core';
 import {RouterModule, Routes} from '@angular/router';
 
-import {PatientsDetailsComponent} from './patients-details.component';
-import {DetailsOfReferralComponent} from './details-of-referral.component';
+import {PatientsDetailsComponent} from './surgical-site-infection-surveillance/register-patient/patients-details/patients-details.component';
+import {AllPatientsComponent} from './surgical-site-infection-surveillance/all-patients/all-patients/all-patients.component';
 
 const routes: Routes = [
-  {path: 'patients-details', component: PatientsDetailsComponent},
-  {path: 'details-of-referral', component: DetailsOfReferralComponent}
+  {path: 'register-patient', component: PatientsDetailsComponent},
+  {path: 'all-patients', component: AllPatientsComponent}
 ];
 
 @NgModule({

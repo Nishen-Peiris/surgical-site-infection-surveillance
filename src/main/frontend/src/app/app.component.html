@@ -1,6 +1,6 @@
 <div class="container-fluid">
   <!-- Top navigation bar -->
-  <nav class="navbar navbar-default navbar-fixed-top" role="navigation" style="height: 80px">
+  <nav class="navbar navbar-default navbar-fixed-top" role="navigation" style="height: 80px; z-index: 1">
     <div class="navbar-header">
       <a class="navbar-brand" href="/" style="padding:25px"><b style="color: #337ab7; font-size: xx-large">Surgical
         Site Infection Surveillance</b></a>
@@ -20,28 +20,16 @@
     <div class="nav-side-menu change">
       <div class="menu-list">
         <ul id="menu-content" class="menu-content collapse out">
-          <li routerLink="/patients-details">
+          <li routerLink="/register-patient">
             <a>
               <i class="fa fa-address-card" aria-hidden="true"></i>
-              <span ng-cloak>Patient's Details</span>
+              <span ng-cloak>Register patient</span>
             </a>
           </li>
-          <li routerLink="details-of-referral">
+          <li routerLink="/all-patients">
             <a>
               <i class="fa fa-handshake-o" aria-hidden="true"></i>
-              <span ng-cloak>Details of Referral</span>
-            </a>
-          </li>
-          <li routerLink="details-of-procedure">
-            <a>
-              <i class="fa fa-users" aria-hidden="true"></i>
-              <span ng-cloak>Details of Procedure</span>
-            </a>
-          </li>
-          <li routerLink="anesthetic-assessment">
-            <a>
-              <i class="fa fa-bed" aria-hidden="true"></i>
-              <span ng-cloak>Anesthetic Assessment</span>
+              <span ng-cloak>All patients</span>
             </a>
           </li>
         </ul>
