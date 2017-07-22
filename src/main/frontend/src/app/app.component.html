@@ -1,23 +1,24 @@
 <div class="container-fluid">
   <!-- Top navigation bar -->
-  <nav class="navbar navbar-default navbar-fixed-top" role="navigation" style="height: 80px; z-index: 1">
+  <nav class="navbar navbar-default navbar-fixed-top" role="navigation"
+       style="height: 80px; z-index: 1; background-color: #134f5c">
     <div class="navbar-header">
-      <a class="navbar-brand" href="/" style="padding:25px"><b style="color: #337ab7; font-size: xx-large">Surgical
+      <a class="navbar-brand" href="/" style="padding:25px"><b style="color: white; font-size: xx-large">Surgical
         Site Infection Surveillance</b></a>
     </div>
-    <ul id="menu-content1" class="nav navbar-top-links navbar-right" style="padding-top: 25px">
+    <ul id="menu-content1" class="nav navbar-top-links navbar-right" style="padding-top: 25px; color: white">
       <li>Full name</li>
       <li>|</li>
       <li>Sign out</li>
     </ul>
   </nav>
   <!-- Router outlet -->
-  <div style="padding-left: 250px; padding-top: 80px">
+  <div style="padding-left: 200px; padding-top: 80px">
     <router-outlet></router-outlet>
   </div>
   <!-- Side navigation bar -->
   <div class="navbar-default sidebar change" role="navigation">
-    <div class="nav-side-menu change">
+    <div class="nav-side-menu change" style="width: 200px;">
       <div class="menu-list">
         <ul id="menu-content" class="menu-content collapse out">
           <li routerLink="/register-patient">
