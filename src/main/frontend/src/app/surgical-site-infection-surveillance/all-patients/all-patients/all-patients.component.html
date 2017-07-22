@@ -1,0 +1,176 @@
+<div class="jumbotron"
+     style="background-color: transparent; padding-bottom: 0px !important; margin-bottom: 0px !important;">
+  <div class="row">
+    <div class="row">
+      <div id="main-container-team" class="col-sm-12">
+        <div class="col-sm-12">
+          <div class="col-sm-12" style="padding-bottom: 50px">
+            <!-------------------- Details of referral form -------------------->
+            <form (ngSubmit)="onSubmitTeam()">
+              <div class="panel panel-info">
+                <div class="panel-heading">
+                  <b>2. Details of Referral</b>
+                </div>
+                <div class="panel-body">
+                  <div class="col-sm-12">
+                    <table class="table panel-table">
+                      <tr>
+                        <td style="border-top: none; width: 30%">
+                          <div>
+                            <h5><b>Date of First Referral:</b></h5>
+                          </div>
+                          <div>
+                            <input type="date" class="form-control" [(ngModel)]="dateOfFirstReferral"
+                                   name="dateOfFirstReferral"
+                                   required="required">
+                          </div>
+                        </td>
+                        <td style="width: 5%; border-top: none"></td>
+                        <td style="border-top: none; width: 30%">
+                          <div>
+                            <h5><b>Referred By:</b></h5>
+                          </div>
+                          <div>
+                            <select [(ngModel)]="referredBy" name="referredBy" style="width: 100%; height: 35px"
+                                    required="required">
+                              <option *ngFor="let referredBy of referedBys">{{referredBy}}</option>
+                            </select>
+                          </div>
+                        </td>
+                        <td style="width: 5%; border-top: none"></td>
+                        <td style="border-top: none; width: 30%">
+                          <div>
+                            <h5><b>Institute of Referral:</b></h5>
+                          </div>
+                          <div>
+                            <select [(ngModel)]="instituteOfReferral" name="instituteOfReferral"
+                                    style="width: 100%; height: 35px"
+                                    required="required">
+                              <option *ngFor="let instituteOfReferral of institutesOfReferral">{{instituteOfReferral}}
+                              </option>
+                            </select>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td style="border-top: none; width: 30%">
+                          <div>
+                            <h5><b>Date of registry at Clinic:</b></h5>
+                          </div>
+                          <div>
+                            <input type="date" class="form-control" [(ngModel)]="dateOfRegistryAtClinic"
+                                   name="dateOfRegistryAtClinic"
+                                   required="required">
+                          </div>
+                        </td>
+                        <td style="width: 5%; border-top: none"></td>
+                        <td style="border-top: none; width: 30%">
+                          <div>
+                            <h5><b>First Date of Consultants Visit:</b></h5>
+                          </div>
+                          <div>
+                            <input type="date" class="form-control" [(ngModel)]="firstDateOfConsultantsVisit"
+                                   name="firstDateOfConsultantsVisit"
+                                   required="required">
+                          </div>
+                        </td>
+                        <td style="width: 5%; border-top: none"></td>
+                        <td style="width: 30%; border-top: none"></td>
+                      </tr>
+                    </table>
+                  </div>
+                  <div class="form-group ">
+                    <div class="col-sm-12">
+                      <button class="btn btn-success update-job pull-right col-sm-1"><i
+                        class="fa fa-floppy-o" style="padding-right: 8px"></i><b>Save</b>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </form>
+            <!-------------------- Details of procedure form -------------------->
+            <form (ngSubmit)="onSubmitTeam()">
+              <div class="panel panel-info">
+                <div class="panel-heading">
+                  <b>3. Details of Procedure</b>
+                </div>
+                <div class="panel-body">
+                  <div class="col-sm-12">
+                    <table class="table panel-table">
+                      <tr>
+                        <td style="border-top: none; padding-right: 5%; width: 30%">
+                          <div>
+                            <h5><b>Date of First Referral:</b></h5>
+                          </div>
+                          <div>
+                            <input type="date" class="form-control" [(ngModel)]="dateOfFirstReferral"
+                                   name="dateOfFirstReferral"
+                                   required="required">
+                          </div>
+                        </td>
+                        <td style="border-top: none; padding-right: 5%; width: 30%">
+                          <div>
+                            <h5><b>Referred By:</b></h5>
+                          </div>
+                          <div>
+                            <select [(ngModel)]="referredBy" name="referredBy" style="width: 100%; height: 35px"
+                                    required="required">
+                              <option *ngFor="let referredBy of referedBys">{{referredBy}}</option>
+                            </select>
+                          </div>
+                        </td>
+                        <td style="border-top: none; width: 30%">
+                          <div>
+                            <h5><b>Institute of Referral:</b></h5>
+                          </div>
+                          <div>
+                            <select [(ngModel)]="instituteOfReferral" name="instituteOfReferral"
+                                    style="width: 100%; height: 35px"
+                                    required="required">
+                              <option *ngFor="let instituteOfReferral of institutesOfReferral">{{instituteOfReferral}}
+                              </option>
+                            </select>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td style="border-top: none; padding-right: 5%; width: 30%">
+                          <div>
+                            <h5><b>Date of registry at Clinic:</b></h5>
+                          </div>
+                          <div>
+                            <input type="date" class="form-control" [(ngModel)]="dateOfRegistryAtClinic"
+                                   name="dateOfRegistryAtClinic"
+                                   required="required">
+                          </div>
+                        </td>
+                        <td style="border-top: none; padding-right: 5%; width: 30%">
+                          <div>
+                            <h5><b>First Date of Consultants Visit:</b></h5>
+                          </div>
+                          <div>
+                            <input type="date" class="form-control" [(ngModel)]="firstDateOfConsultantsVisit"
+                                   name="firstDateOfConsultantsVisit"
+                                   required="required">
+                          </div>
+                        </td>
+                      </tr>
+                    </table>
+                  </div>
+                  <div class="form-group ">
+                    <div class="col-sm-12">
+                      <button class="btn btn-success update-job pull-right col-sm-1"><i
+                        class="fa fa-floppy-o" style="padding-right: 8px"></i><b>Save</b>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

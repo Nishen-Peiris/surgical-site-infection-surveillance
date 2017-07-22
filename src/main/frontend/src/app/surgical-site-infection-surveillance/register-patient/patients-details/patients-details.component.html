@@ -1,0 +1,160 @@
+<div class="jumbotron"
+     style="background-color: transparent; padding-bottom: 0px !important; margin-bottom: 0px !important;">
+  <div class="row">
+    <div class="row">
+      <div id="main-container-team" class="col-sm-12">
+        <div class="col-sm-12">
+          <div class="col-sm-12">
+            <form (ngSubmit)="onSubmitTeam()">
+              <div id="form-header-team" class="panel panel-info">
+                <div class="panel-heading">
+                  <b>1. Patient's Details</b>
+                </div>
+                <div class="panel-body">
+                  <div class="col-sm-12">
+                    <table class="table panel-table">
+                      <tr>
+                        <td style="border-top: none; width: 30%">
+                          <div>
+                            <h5><b>Surname:</b></h5>
+                          </div>
+                          <div>
+                            <input type="text" class="form-control" [(ngModel)]="surname" name="surname"
+                                   required="required">
+                          </div>
+                        </td>
+                        <td style="width: 5%; border-top: none"></td>
+                        <td style="border-top: none; width: 30%">
+                          <div>
+                            <h5><b>First Name:</b></h5>
+                          </div>
+                          <div>
+                            <input type="text" class="form-control" [(ngModel)]="firstName" name="firstName"
+                                   required="required">
+                          </div>
+                        </td>
+                        <td style="width: 5%; border-top: none"></td>
+                        <td style="border-top: none; width: 30%">
+                          <div>
+                            <h5><b>Name with Initials:</b></h5>
+                          </div>
+                          <div>
+                            <input type="text" class="form-control" [(ngModel)]="nameWithInitials"
+                                   name="nameWithInitials"
+                                   required="required">
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td style="border-top: none; width: 30%">
+                          <div>
+                            <h5><b>Gender:</b></h5>
+                          </div>
+                          <div style="float: left; clear: left">
+                            <div><input type="radio" name="gender" value="male"> <b>Male</b></div>
+                            <div><input type="radio" name="gender" value="female"> <b>Female</b></div>
+                          </div>
+                        </td>
+                        <td style="width: 5%; border-top: none"></td>
+                        <td style="border-top: none; width: 30%">
+                          <div>
+                            <h5><b>Date of Birth:</b></h5>
+                          </div>
+                          <div>
+                            <input type="date" class="form-control" [(ngModel)]="dateOfBirth" name="dateOfBirth"
+                                   required="required">
+                          </div>
+                        </td>
+                        <td style="width: 5%; border-top: none"></td>
+                        <td style="border-top: none; width: 30%">
+                          <div>
+                            <h5><b>Present Age:</b></h5>
+                          </div>
+                          <div>
+                            <input type="text" class="form-control" [(ngModel)]="presentAge" name="presentAge"
+                                   required="required" readonly="readonly">
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td style="border-top: none; width: 30%">
+                          <div>
+                            <h5><b>Age on Presentation:</b></h5>
+                          </div>
+                          <div>
+                            <input type="text" class="form-control" [(ngModel)]="ageOnPresentation"
+                                   name="ageOnPresentation" required="required" readonly="readonly">
+                          </div>
+                        </td>
+                        <td style="width: 5%; border-top: none"></td>
+                        <td style="border-top: none; width: 30%">
+                          <div>
+                            <h5><b>Address:</b></h5>
+                          </div>
+                          <div>
+                            <input type="text" class="form-control" [(ngModel)]="address"
+                                   name="address" required="required">
+                          </div>
+                        </td>
+                        <td style="width: 5%; border-top: none"></td>
+                        <td style="border-top: none; width: 30%">
+                          <div>
+                            <h5><b>District:</b></h5>
+                          </div>
+                          <div>
+                            <select [(ngModel)]="district" name="district" style="width: 100%; height: 35px"
+                                    required="required">
+                              <option *ngFor="let district of districts">{{district}}</option>
+                            </select>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td style="border-top: none; width: 30%">
+                          <div>
+                            <h5><b>Mobile:</b></h5>
+                          </div>
+                          <div>
+                            <input type="text" class="form-control" [(ngModel)]="mobileNumber"
+                                   name="mobileNumber" required="required">
+                          </div>
+                        </td>
+                        <td style="width: 5%; border-top: none"></td>
+                        <td style="border-top: none; width: 30%">
+                          <div>
+                            <h5><b>Land Line:</b></h5>
+                          </div>
+                          <div>
+                            <input type="text" class="form-control" [(ngModel)]="landLineNumber"
+                                   name="landLineNumber" required="required">
+                          </div>
+                        </td>
+                        <td style="width: 5%; border-top: none"></td>
+                        <td style="border-top: none; width: 30%">
+                          <div>
+                            <h5><b>Preferred Mode of Communication:</b></h5>
+                          </div>
+                          <div>
+                            <input type="text" class="form-control" [(ngModel)]="preferredModeOfCommunication"
+                                   name="preferredModeOfCommunication" required="required">
+                          </div>
+                        </td>
+                      </tr>
+                    </table>
+                  </div>
+                  <div class="form-group ">
+                    <div class="col-sm-12">
+                      <button class="btn btn-success update-job pull-right col-sm-1"><i
+                        class="fa fa-floppy-o" style="padding-right: 8px"></i><b>Save</b>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
