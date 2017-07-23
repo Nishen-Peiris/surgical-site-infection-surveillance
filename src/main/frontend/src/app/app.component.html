@@ -21,13 +21,15 @@
     <div class="nav-side-menu change" style="width: 200px;">
       <div class="menu-list">
         <ul id="menu-content" class="menu-content collapse out">
-          <li routerLink="/register-patient">
+          <li routerLink="/register-patient" [ngClass]="{'active': activeTab == 'register-patient'}"
+              (click)="setActiveTab('register-patient')">
             <a>
               <i class="fa fa-address-card" aria-hidden="true"></i>
               <span ng-cloak>Register patient</span>
             </a>
           </li>
-          <li routerLink="/all-patients">
+          <li routerLink="/all-patients" [ngClass]="{'active': activeTab == 'all-patients'}"
+              (click)="setActiveTab('all-patients')">
             <a>
               <i class="fa fa-handshake-o" aria-hidden="true"></i>
               <span ng-cloak>All patients</span>

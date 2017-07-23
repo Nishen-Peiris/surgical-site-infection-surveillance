@@ -6,4 +6,9 @@ import {Component} from '@angular/core';
 })
 
 export class AppComponent {
+  private activeTab: string;
+
+  setActiveTab(activeTab: string) {
+    this.activeTab = activeTab;
+  }
 }
